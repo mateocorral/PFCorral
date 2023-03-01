@@ -1,0 +1,38 @@
+
+.footer__listaRedes{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.logoRedes{
+    width: 75px;
+}
+footer{
+    background-color: red;
+    .footer__listaRedes{
+        display: flex;
+        justify-content: space-around;
+        .logoRedes{
+            width: 75px;
+        }
+    }
+}
+@media(max-width:425px){
+    
+    footer{
+        height: 20vh;
+        .footer__listaRedes{
+            display: flex;
+            justify-content: space-around;
+            height: 18vh;
+            align-items: center;
+            .logoRedes{
+                width: 50px;
+                height: 2rem;
+            }
+        }    
+    }
+    
+    
+}

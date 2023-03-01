@@ -1,0 +1,40 @@
+.main__imagenInicio {
+    width: 100vw;
+    object-fit: cover;
+    height: 80vh;
+
+
+}
+.main_imagenesInicio {
+    text-align: center;
+    .carousel-item{
+        height: 90vh;
+    }
+}
+
+
+@media(max-width:425px) {
+
+    .main__imagenInicio {
+        width: 100vw;
+    }
+    .main_imagenesInicio{
+        height: 50vh;
+        .carousel-item{
+            height: 50vh;
+            object-fit: cover;
+            padding: 0px;
+            .imagen-carousel{
+                height: 50vh;
+                object-fit: cover;
+            }
+        }
+    }
+
+    
+}
+@media(max-width:768px){
+    .main__imagenInicio {
+        width: 100vw;
+    }
+}

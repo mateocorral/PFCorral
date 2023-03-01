@@ -1,0 +1,54 @@
+@mixin div_escuderias($fondo){
+    background-color:$fondo;
+    display: grid;
+    grid-template-columns:repeat(2,1fr) ;
+    align-items: center;
+    justify-items: center;
+    padding: 1.5rem;
+    border:3px solid black;
+    text-align: center;
+}
+.main__divRedbull{
+    @include div_escuderias($colorRedbull) 
+}
+
+.main__divFerrari{
+    @include div_escuderias($colorFerrari)
+}
+.main__divMercedes{
+    @include div_escuderias(black)
+}
+.main__divAlpine{
+    @include div_escuderias(white)
+}
+.main__divMclaren{
+    @include div_escuderias($colorMclaren)
+}
+.logoMclaren{
+    width: 25vw;
+}
+.main__divAlfaromeo{
+    @include div_escuderias($colorAlfaromeo)
+}
+.main__divAstonmartin{
+    @include div_escuderias($colorAstonmartin)
+}
+.main__divHaas{
+    @include div_escuderias(white)
+}
+.main__divAlphatauri{
+    @include div_escuderias($colorAlphatauri)
+}
+.main__divWilliams{
+    @include div_escuderias(black)
+}
+@media(max-width:425px){
+    .escuderiasMobile{
+        grid-template-columns: none;
+        grid-template-rows: repeat(2,1fr);
+    }
+    .logoMclaren{
+        width: 80vw;
+    }
+    
+}
